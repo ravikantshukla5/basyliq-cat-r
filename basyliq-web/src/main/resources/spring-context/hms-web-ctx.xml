@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/aop 
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+	<!-- declare where controller resides. -->
+	<context:component-scan base-package="com.socgen.poc.controller,com.socgen.poc.validator" />
+	
+	<!-- <bean id="billingValidator"	class="com.ramselabs.hms.validator.BillingValidator" />
+	<bean id="serviceValidator"	class="com.ramselabs.hms.validator.ServiceValidator" />
+	<bean id="doctorValidator" class="com.ramselabs.hms.validator.DoctorValidator" />
+	<bean id="patientRegistrationValidator"	class="com.ramselabs.hms.validator.PatientRegistrationValidator" />
+	<bean id="therapyValidator"	class="com.ramselabs.hms.validator.TherapyValidator" />
+	<bean id="roomValidator" class="com.ramselabs.hms.validator.RoomValidator" />
+	<bean id="userValidator" class="com.ramselabs.hms.validator.UserValidator" />
+	<bean id="visitValidator" class="com.ramselabs.hms.validator.VisitValidator" />
+	 -->
+	<!-- Declare viewResolver. -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	</bean>
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>messages</value>
+			</list>
+		</property>
+	</bean>
+</beans>

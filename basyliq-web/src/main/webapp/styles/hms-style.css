@@ -1,0 +1,18 @@
+#mainNav #item1Tab a.current span,#mainNav #item2Tab a.current span,#mainNav #item3Tab a.current span,#mainNav #item6Tab a.current span,#mainNav #item7Tab a.current span,#mainNav #item8Tab a.current span,#mainNav #item9Tab a.current span,#mainNav #item10Tab a.current span
+	{
+	background-position: 0px -50px;
+	color: #FF69B4;
+	font-weight: bold;
+}
+
+.hms-tab{width: 100%;}
+.black-color {
+	color : black !important;
+}
+.font-bold{
+	font-weight: bold !important;
+}
+.home-content{
+	width: 600 !important;
+    height: 200 !important;
+}

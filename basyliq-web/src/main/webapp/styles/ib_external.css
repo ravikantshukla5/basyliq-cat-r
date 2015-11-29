@@ -1,0 +1,321 @@
+#slider1 {
+    width: 540px; /* important to be same as image width 720*/
+    height: 200px; /* important to be same as image height */
+    position: relative; /* important */
+	overflow: hidden; /* important */
+	padding:0px 0px 0px 0px;
+}
+
+#slider1Content {
+    width: 540px; /* important to be same as image width or wider 720 */
+    position: absolute;
+	top: 0;
+	margin-left: 0;
+	text-indent:0px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+.slider1Image {
+    float: left;
+    position: relative;
+	display: none;
+	text-indent:0px;
+}
+.slider1Image span {
+    position: absolute;
+	font: 10px/15px Arial, Helvetica, sans-serif;
+    padding: 10px 13px;
+    width: 540px;
+    background-color: #000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+    opacity: 0.7;
+    color: #fff;
+    display: none;
+}
+.clear {
+	clear: both;
+}
+.slider1Image span strong {
+    font-size: 14px;
+}
+.left {
+	top: 0;
+    left: 0;
+	width: 110px !important;
+	height: 200px;
+}
+.right {
+	right: 0;
+	bottom: 0;
+	width: 90px !important;
+	height: 200px;
+}
+
+.no_disp {
+	display:none;
+}
+ul { list-style-type: none;}
+
+/* Second section of CSS found in html */
+.bodytext {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	line-height: 16px;
+}
+.footer-text {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #222222;
+	text-decoration: none;
+}
+
+.tabletitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #BC6D03;
+	text-decoration: none;
+}
+/*------------------------*/
+.delvrych {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #334CA6;
+	text-decoration: none;
+}
+
+a.delvrych:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000080;
+	text-decoration: none;
+}
+/*------------------------*/
+.homelink {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #538CC6;
+	text-decoration: none;
+}
+
+a.homelink:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000080;
+	text-decoration: none;
+}
+/*------------------------*/
+.homelink2 {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #538CC6;
+	text-decoration: none;
+}
+
+a.homelink2:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000080;
+	text-decoration: none;
+}
+/*------------------------*/
+.mainlink2 {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+}
+
+a.mainlink2:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: underline;
+}
+/*------------------------*/
+.mainlink {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.mainlink:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffcc;
+	text-decoration: underline;
+}
+/*------------------------*/
+.btnlink {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #222222;
+	text-decoration: none;
+}
+
+.btnlink:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #222222;
+	text-decoration: underline;
+}
+/*------------------------*/
+.scroll {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #336699;
+	text-decoration: none;
+}
+/*------------------------*/
+.scroll2 {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/*------------------------*/
+.searchbox {
+	height: 12px;
+	width: 120px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+
+/*------------------------*/
+.listbox {
+	height: 18px;
+	width: 70px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #777777;
+}
+
+/*--------------------------*/
+.pglink {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.pglink:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+}
+/*--------------------------*/
+.bannertext {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+}
+.ftrlink {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.ftrlink:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFDD77;
+	text-decoration: none;
+}
+/*------------------------*/
+.ftrlinkTop {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #356cc9;
+	text-decoration: none;
+}
+
+.ftrlinkTop:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFDD77;
+	text-decoration: none;
+}
+/*------------------------*/
+.rightlink {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+
+a.rightlink:hover {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+/*--------------------------*/
+.frontlink {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.frontlink:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffaa;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*--------------------------*/
+.protitle {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*------------------------*/
+.smalltext {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #2F6397;
+	text-decoration: none;
+}
+
+a.smalltext:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000080;
+	text-decoration: none;
+}
+/*------------------------*/
+.dblink {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.dblink:hover {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+}

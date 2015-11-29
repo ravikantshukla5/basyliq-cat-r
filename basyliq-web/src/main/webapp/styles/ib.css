@@ -1,0 +1,66 @@
+body {
+	background-color: #CCCCCC; /*#ffd940*/
+	/* Margin: top right bottom left */
+	margin: 0% 0% 0% 0%;
+	text-align: center;
+}
+
+.table-root {
+	background-color: #FFFFFF;
+	border-width: 0;
+	border-spacing: 0px 0px;
+	padding: 0% 0% 0% 0%;
+	/* making margin-left and margin-right will make table centered */
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.top-blank-row {
+	height: 8px;
+}
+
+.top-blank-col {
+	column-span: 3;
+	background-color: #FFFFFF;
+}
+
+.left-margin-col {
+	background-color: #FFFFFF;
+	width: 25;
+}
+
+.top-content-table {
+	width: 950;
+	border-width: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 0px 0px;
+	padding: 0% 0% 0% 0%;
+}
+
+/* .banner-table {
+	width: 100%;
+	height: 75;
+	border-width: 0;
+	border-spacing: 0px 0px;
+	padding: 0% 0% 0% 0%;
+	background-image: url('../images/mindtreeBanner.jpg');
+	background-color: #666666;
+} */
+.banner-table{
+	border-width: 0;
+	border-spacing: 0px 0px;
+	padding-bottom: 180px;
+	width: 73%;
+	background-image: url('../images/mindtreeBanner.jpg');
+	background-color: #666666;
+}
+.banner-link-col {
+	text-align: right;
+	vertical-align: top;
+}
+
+.banner-right-blank-col {
+	width: 5;
+}

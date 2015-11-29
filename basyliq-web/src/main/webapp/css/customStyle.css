@@ -1,0 +1,36 @@
+.navbar-inverse {
+	/*background-color: #222;*/
+	border-color: #E67084 !important;
+	background: #E6072C !important;
+	/* color: #333; */
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #333 !important;
+	text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:focus,.navbar-inverse .navbar-nav>.open>a:hover
+	{
+	color: #fff !important;
+}
+
+.dropdown-menu {
+	min-width: 190px;
+}
+
+.icon-home {
+	background: url('../images/home_24.png') no-repeat center center;
+	margin: 10px;
+	margin-right: 0px;
+}
+
+@media ( max-width : 760px) and (min-device-width: 768px) {
+	.icon-home {
+		background-position: 5px 0px !important;
+	}
+}
+
+.navbar-brand {
+	margin-left: 0px !important;
+}

@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Spry Menu Bar</title>
+<script src="SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+ul.MenuBarVertical#MenuBar1 {
+	width: auto;
+	float: left;
+}
+
+ul.MenuBarVertical#MenuBar1 li {
+	width: auto;
+	display: block;
+	float: none;
+	border-bottom: solid 1px #EEE;
+}
+ul.MenuBarVertical#MenuBar1 li {
+}
+ul.MenuBarVertical#MenuBar1 ul {
+	width: auto;
+}
+
+ul.MenuBarVertical#MenuBar1 ul li {
+	width: auto;
+	white-space: nowrap;
+}
+
+ul.MenuBarVertical#MenuBar1 a.MenuBarItemSubmenu {
+	padding: 0.2em 2em 0.2em 0.4em;
+}
+
+-->
+</style>
+</head>
+<body>
+
+
+<!--------- DO NOT TOUCH ANYTHING ABOVE THIS LINE  --------->
+
+
+<ul id="MenuBar1" class="MenuBarVertical">
+
+
+	<li><a class="MenuBarItemSubmenu" href="#">Item 1</a>
+		<ul>
+			<li><a href="#">Item 1.1</a></li>
+			<li><a href="#">Item 1.2</a></li>
+		</ul>
+	</li>
+
+
+
+	<li><a href="#">Item 2</a></li>
+
+
+
+	<li><a class="MenuBarItemSubmenu" href="#">Item 3 - With a long menu item string!</a>
+		<ul>
+			<li><a class="MenuBarItemSubmenu" href="#">Item 3.1 - With a long menu item string!</a>
+				<ul>
+					<li><a href="#">Item 3.1.1</a></li>
+					<li><a href="#">Item 3.1.2</a></li>
+					<li><a href="#">This is a long menu item string!</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Item 3.2</a></li>
+			<li><a href="#">Item 3.3</a></li>
+			<li><a href="#">ThisIsALongMenuItemString!</a></li>
+		</ul>
+	</li>
+
+
+
+	<li><a class="MenuBarItemSubmenu" href="#">Item4 - WithAStringThatDoesNotWrap</a>
+		<ul>
+			<li><a href="#">Item 4.2</a></li>
+			<li><a href="#">Item 4.3</a></li>
+			<li><a href="#">WithAStringThatDoesNotWrap</a></li>
+		</ul>
+	</li>
+
+</ul>
+
+
+<!--------- DO NOT TOUCH ANYTHING BELOW THIS LINE  --------->
+
+
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</div>
+</body>
+</html>

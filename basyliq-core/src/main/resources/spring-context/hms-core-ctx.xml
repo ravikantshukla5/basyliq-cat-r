@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/aop 
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- Enable Annotation configurations like Dependency Injection using Annotations -->
+
+	<context:annotation-config />
+
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!-- <bean id="userAccountDao" class="com.ramselabs.hms.dao.hibernate.UserAccountHibernateDao" />
+	<bean id="userDao" class="com.ramselabs.hms.dao.hibernate.UserHibernateDao" />
+	<bean id="roleDao" class="com.ramselabs.hms.dao.hibernate.RoleHibernateDao" />
+	<bean id="billingDao" class="com.ramselabs.hms.dao.hibernate.BillingHibernateDao" />
+	<bean id="doctorDao" class="com.ramselabs.hms.dao.hibernate.DoctorHibernateDao" />
+	<bean id="patientDao" class="com.ramselabs.hms.dao.hibernate.PatientHibernateDao" />
+	<bean id="roomDao" class="com.ramselabs.hms.dao.hibernate.RoomHibernateDao" />
+	<bean id="serviceDao" class="com.ramselabs.hms.dao.hibernate.ServiceHibernateDao" />
+	<bean id="therapyDao" class="com.ramselabs.hms.dao.hibernate.TherapyHibernateDao" />
+	<bean id="visitDao" class="com.ramselabs.hms.dao.hibernate.VisitHibernateDao" />
+
+	<bean id="userAccountService" class="com.ramselabs.hms.service.impl.UserAccountServiceImpl" />
+	<bean id="userAuthenticationService"
+		class="com.ramselabs.hms.service.impl.UserAuthenticationServiceImpl" />
+	<bean id="userService" class="com.ramselabs.hms.service.impl.UserServiceImpl" />
+	<bean id="roleService" class="com.ramselabs.hms.service.impl.RoleServiceImpl" />
+	<bean id="assembler" class="com.ramselabs.hms.service.impl.AssemblerImpl" />
+
+	<bean id="patientNumberGenerator" class="com.ramselabs.hms.service.impl.PatientNumberGenerator">
+		<property name="startId" value="11351" />
+	</bean>
+	<bean id="billNumberGenerator" class="com.ramselabs.hms.service.impl.BillNumberGenerator">
+		<property name="startId" value="100001" />
+	</bean>
+	<bean id="billingService" class="com.ramselabs.hms.service.impl.BillingServiceImpl" />
+	<bean id="doctorService" class="com.ramselabs.hms.service.impl.DoctorServiceImpl" />
+	<bean id="patientService" class="com.ramselabs.hms.service.impl.PatientServiceImpl" />
+	<bean id="roomRentalService" class="com.ramselabs.hms.service.impl.RoomRentalServiceImpl" />
+	<bean id="therapyService" class="com.ramselabs.hms.service.impl.TherapyServiceImpl" />
+	<bean id="visitService" class="com.ramselabs.hms.service.impl.VisitServiceImpl" /> -->
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="configLocation">
+			<value>classpath:/hibernate.cfg.xml</value>
+		</property>
+	</bean>
+
+	<context:property-placeholder
+		location="classpath:/config/hmsDatabase.properties" />
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="initialSize" value="${jdbc.initialSize}" />
+		<property name="maxActive" value="${jdbc.maxActive}" />
+		<property name="minIdle" value="${jdbc.minIdle}" />
+		<property name="maxIdle" value="${jdbc.maxIdle}" />
+		<property name="maxWait" value="${jdbc.maxWait}" />
+		<property name="testWhileIdle" value="${jdbc.testWhileIdle}" />
+		<property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}" />
+	</bean>
+    <bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+</beans>
